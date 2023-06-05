@@ -1,0 +1,149 @@
+*, body{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width : 100%;
+    height : 100vh;
+    /* background: linear-gradient(to top right, #3932A0, #3377FF); */
+    background : rgb(232, 231, 239);
+}
+
+#container{
+    position: relative;
+    width : 100%;
+    height : 100%;
+    overflow: hidden;
+}
+
+#container .login-contain{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top : 50%;
+    left : 50%;
+    width : 80%;
+    height : 80vh;
+    border: 1px solid #ffffff49;
+    border-radius: 7px;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 20px rgba(0,0,0,.1);
+    transform : translate(-50%,-50%);
+}
+
+#container .login-contain h1{
+    text-align: center;
+    text-transform: uppercase;
+    color : #000000;
+    margin : 2% 0;
+}
+#container .login-contain form{
+    display: flex;
+    gap : 15px;
+    width: 100%;
+    height: 100%;
+}
+#container .login-contain form .formulaire-contain{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width : 50%;
+}
+#container .login-contain form .formulaire-contain .form-control{
+    position: relative;
+    width : 70%;
+    height : 50px;
+    border : 1px solid #ffffff3e;
+    border-radius: 7px;
+    background: #398dee95;
+    backdrop-filter: blur(5px);
+
+}
+#container .login-contain form .formulaire-contain .form-control img{
+    position: absolute;
+    top : 27%;
+    left: 5px;
+    width: 20px;
+    opacity: 1;
+}
+#container .login-contain form .formulaire-contain .form-control input{
+    padding-left: 45px;
+    border: none;
+    width : 100%;
+    height : 100%;
+    outline: none;
+    background: none;
+    color: #ffffff;
+}
+#container .login-contain form .formulaire-contain .form-control span{
+    display: inline-block;
+    position: absolute;
+    right : 2%;
+    top : 40%;
+    width : 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ffffffce;
+    cursor: pointer;
+}
+#container .login-contain form .formulaire-contain .form-control input::placeholder{
+    color : #ffffff90;
+    font-weight: 100;
+}
+#container .login-contain form .formulaire-contain .submission{
+    margin : 2.5% 0;
+    width : 70%;
+    height : 35px;
+}
+#container .login-contain form .formulaire-contain .submission input{
+    padding : 8px 12px;
+    height : 100%;
+    border : none;
+    border-radius: 5px;
+    color : #fff;
+    background: #16007E;
+    transition: .3s;
+}
+/* #container .login-contain form .formulaire-contain .submission input:hover{
+    box-shadow: 0 10px 10px #0c00456b;
+} */
+
+#container .login-contain form .image-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 50%;
+    height: 100%;
+}
+#container .login-contain form .image-contain img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width : 450px){
+    #container .login-contain form .image-contain{
+        display: none;
+    }
+    #container .login-contain form .formulaire-contain{
+        width: 100%;
+    }
+    #container .login-contain h1{
+        font-size: 1.6em;
+        margin: 0;
+        margin-bottom: 15%;
+    }
+    #container .login-contain form .formulaire-contain .form-control{
+        width : 90%
+    }
+    #container .login-contain form .formulaire-contain .submission{
+        width: 90%;
+    }
+}

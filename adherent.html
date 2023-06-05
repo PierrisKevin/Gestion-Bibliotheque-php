@@ -1,0 +1,74 @@
+<div class="overlay hidden"></div>
+        <div class="delet-modal hidden">
+            <div class="icon-trash">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="message-del">
+                Voulez vous vraiment supprimer membre adhere ?
+            </div>
+            <div class="option-del">
+                <form action="" method="post">
+                    <button>confirmer</button>
+                </form>
+                <button class="cancel">Annuler</button>
+            </div>
+        </div>
+        <div class="modal-container hidden">
+            <form action="POST" class="add-member">
+
+                <div class="titre">
+                    <h1>Ajouter un membre</h1>
+                </div>
+                <div class="fullname">
+                    <input type="text"placeholder="Nom" name="nom" required>
+                    <input type="text"placeholder="Prenom" name="prenom">
+                </div>
+                <input type="text" placeholder="date de naissance" name="dateNaiss"required>
+                <input type="text" placeholder="Lieu de naissance" name="lieuNaissance"required>
+                <input type="text" placeholder="Adresse" name="Adresse"required>
+                <input type="number" placeholder="Numero telephone" name="numTel" required>
+                <input type="hidden" name="matricule">
+
+                <div class="submission">
+                    <input type="submit" value="Enregistrer">
+                </div>
+            </form>
+        </div>
+
+        <div class="adherent-container">
+            <header>
+                <form method="POST" class="search-container">
+                    <input type="text" placeholder="Cherche ici..." name="search">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="add-btn">
+                    <a href="#">
+                        + nouveau membre 
+                    </a>
+                </div>
+            </header>
+
+            <div class="adherant-list">
+                <div class="box">
+                    <!-- <p>00000</p> -->
+                    <p>Nom d'adherant</p>
+                    <p>Prenom adherant</p>
+                    <p>date naissance</p>
+                    <p>Lieu naissance</p>
+                    <p>Adresse</p>
+                    <p>0330000000</p>
+                    <div class="choise">
+                        <div class="delet">
+                            <i class="fa-solid fa-trash" id="0000"></i>
+                        </div>
+                        <div class="edit">
+                            <i class="fa-solid fa-magnifying-glass" id="00000"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
